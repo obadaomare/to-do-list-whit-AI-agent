@@ -77,6 +77,8 @@ step .1
 python app.py
 ```
 step .2
+in the new terminal run:
+
 Ex:Invoke-RestMethod -Uri "http://127.0.0.1:5001/tasks" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{
     "title": "Doctor Appointment",
     "description": "Visit the doctor for a check-up",
