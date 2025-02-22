@@ -72,14 +72,18 @@ NOW FOR ADD TASK RUN IN THE TERMINAL:
 python add_task.py
 ```
 OR FROM BY USING THE POST FUNCTION THROUGH:
+
 step .1
 ```
 python app.py
 ```
 step .2
+
 in the new terminal run:
 
-Ex:Invoke-RestMethod -Uri "http://127.0.0.1:5001/tasks" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{
+Ex:
+```
+Invoke-RestMethod -Uri "http://127.0.0.1:5001/tasks" -Method Post -Headers @{"Content-Type"="application/json"} -Body '{
     "title": "Doctor Appointment",
     "description": "Visit the doctor for a check-up",
     "status": "pending",
@@ -87,4 +91,4 @@ Ex:Invoke-RestMethod -Uri "http://127.0.0.1:5001/tasks" -Method Post -Headers @{
     "start_time": "2025-03-10T10:00:00Z",
     "end_time": "2025-03-10T11:00:00Z"
 }'
-                                                   
+```                               
