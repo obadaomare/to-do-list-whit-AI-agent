@@ -4,9 +4,13 @@ AI Task Manager is a Flask-based task management application that allows users t
 Features:
 
 .Task creation, update, and deletion
+
 .Task prioritization using High, Medium, and Low levels
+
 .API for task management
+
 .Google Calendar integration for scheduling tasks
+
 .Interactive AI assistant for task-related queries
 
 Installation
@@ -34,9 +38,13 @@ python
 4. Configure Google Calendar API
 
 Go to Google Cloud Console
+
 Create a new project and enable Google Calendar API
+
 Generate OAuth 2.0 credentials and download credentials.json
+
 Place credentials.json in the project root
+
 Authenticate using:
 ```
 python google_calendar.py
@@ -50,9 +58,13 @@ The application will run on http://127.0.0.1:5001/
 API Endpoints:
 
 GET /tasks - Retrieve all tasks
+
 POST /tasks - Add a new task
+
 PUT /tasks/<task_id> - Update an existing task
+
 DELETE /tasks/<task_id> - Delete a task
+
 POST /ask-ai - Interact with the AI assistant
 
 NOW FOR ADD TASK RUN IN THE TERMINAL:
